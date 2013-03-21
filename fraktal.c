@@ -39,13 +39,6 @@ double get_time()
 
 #endif
 
-
-
-double getRadius(struct tComplex z)
-{
-	return sqrt(z.im*z.im+z.re*z.re);
-}
-
 int getItera(struct tComplex c, struct tComplex z, struct tParam p)
 {
 	int i=0;
@@ -123,9 +116,9 @@ void plotFraktal(struct tComplex c, struct tComplex z, struct tParam p)
 			if(redraw)
 			{
 				InitGraph(p.xmin,p.xmax,p.ymin,p.ymax,p.xres,p.yres);
-				runtime = my_get_time();
+				runtime = get_time();
 				Fraktal(c,z,p);
-				runtime = my_get_time() - runtime;
+				runtime = get_time() - runtime;
 				sprintf(time, "%.3fs @ (%f, %f) - (%f, %f)", runtime, p.xmin, p.ymin, p.xmax, p.ymax);
 				SDL_WM_SetCaption(time, NULL);
 				redraw = 0;
