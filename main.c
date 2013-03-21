@@ -1,13 +1,3 @@
-/* Datei v3_main.c              */
-/* P. Rieger; TUD/PLT 4.10.2001 */
-
-/*****************************************************************************
-
-  Praktikumsversuch: Einführung in die Sprache C
-  Main-Programm
-
-*****************************************************************************/
-
 #include "fraktal.h"
 #include "graphic.h"
 #include "dialog.h"
