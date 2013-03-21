@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
 
 	//while(ParamDialog(&c, &z, &p))
 	//{}
-	plotFraktal(c,z,p);
+	Fraktal(c,z,p);
 
 	/*
 	tFraktal f = Apfel;
